@@ -13,6 +13,35 @@
   <a href="https://huggingface.co/docs/diffusers/main/en/api/pipelines/pixart"><img src="https://img.shields.io/static/v1?label=Usage&message=Diffusers&color=green&"></a> &ensp;
 </div>
 
+# Windows Install
+1. Create environment
+```
+conda create --name pixart python=3.10.11
+conda activate pixart
+```
+
+2. Clone repository
+```
+git clone https://github.com/natlamir/PixArt-alpha.git pixart
+cd pixart
+```
+
+3. Install PyTorch with CUDA 12.1
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+
+4. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+# Run Web UI
+```
+python ui.py
+```
+
+
 ---
 
 This repo contains PyTorch model definitions, pre-trained weights and inference/sampling code for our paper exploring 
